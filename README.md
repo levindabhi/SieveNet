@@ -8,8 +8,8 @@ Put dataset in `data` folder
 
 # Traning #
 To install requirements please run `requirement.txt`
-#### Training of Coarse-to-Fine Warping module ####
-&nbsp;&nbsp;&nbsp;&nbsp; In `config.py` set ```self.datamode='Train'``` and ```self.stage='GMM'```
+#### Coarse-to-Fine Warping module ####
+&nbsp;&nbsp;&nbsp;&nbsp; In `config.py` set ```self.datamode='train'``` and ```self.stage='GMM'```
 </br> &nbsp;&nbsp;&nbsp;&nbsp; then run ```python train.py```
 
 ####  Conditional Segmentation Mask generation module ####
@@ -23,4 +23,5 @@ To install requirements please run `requirement.txt`
 # Testing on dataset #
 Please download checkpoint of all three modules from [google drive](www.google.com) and put them in `checkpoints` folder
 </br>
-For testing in `config.py` set ```self.datamode='Train'```
+For testing, in `config.py` set ```self.datamode='test'```
+</br> For Testing of Coarse-to-Fine Warping module, Conditional Segmentation Mask generation module, and Segmentation Assisted Texture Translation module set ```self.stage='GMM'```, ```self.stage='SEG'```, and ```self.stage='TOM'``` respectively.
