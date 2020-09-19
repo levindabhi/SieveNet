@@ -44,12 +44,11 @@ Here is testing result. For Coarse-to-Fine Warping module,
 ![SS from tensorboard while testing gmm](https://github.com/levindabhi/SieveNet/image/test_tom.png)
 
 # Testing on custom image #
-Please download checkpoint of all three modules from [google drive](www.google.com) and put them in `checkpoints` folder.
-</br>
-Please download caffe-model from [here](http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel) and put the model in `pose` folder. </br>
-Generate human parsing from [Self-Correction-Human-Parsing](https://github.com/PeikeLi/Self-Correction-Human-Parsing) repo. Select `LIP` dataset while generating human parsing.</br>
-Set input-image's, cloth-image's, and output of human parsing image's path in config file.</br>
-Then run ```python inference.py```
+1. Please download checkpoint of all three modules from [google drive](www.google.com) and put them in `checkpoints` folder.
+2. Please download caffe-model from [here](http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel) and put the model in `pose` folder. </br>
+3. Generate human parsing from [Self-Correction-Human-Parsing](https://github.com/PeikeLi/Self-Correction-Human-Parsing) repo. Select `LIP` dataset while generating human parsing.</br>
+4. Set input-image's, cloth-image's, and output of human parsing image's path in config file.</br>
+5. Then run ```python inference.py```
 Output will be saved in `outputs` folder.
 
 # Acknowledgements #
