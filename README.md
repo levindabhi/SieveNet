@@ -15,19 +15,19 @@ Clone the repo and install requirements through ```requirement.txt```
 </br> &nbsp;&nbsp;&nbsp;&nbsp; then run ```python train.py```
 </br> You can observe results while traning in tensorboard as below
 </br>
-![SS from tensorboard while training gmm](https://github.com/levindabhi/SieveNet/images/train_gmm.png)
+![SS from tensorboard while training gmm](https://github.com/levindabhi/SieveNet/blob/master/images/train_gmm.png)
 
 ####  Conditional Segmentation Mask generation module ####
 &nbsp;&nbsp;&nbsp;&nbsp; In `config.py` set ```self.datamode='Train'``` and ```self.stage='SEG'```
 </br> &nbsp;&nbsp;&nbsp;&nbsp; then run ```python train.py```
 </br>
-![SS from tensorboard while training segm](https://github.com/levindabhi/SieveNet/images/train_segm.jpeg)
+![SS from tensorboard while training segm](https://github.com/levindabhi/SieveNet/blob/master/images/train_seg.jpeg)
 
 ####  Segmentation Assisted Texture Translation module ####
 &nbsp;&nbsp;&nbsp;&nbsp; In `config.py` set ```self.datamode='Train'``` and ```self.stage='TOM'```
 </br> &nbsp;&nbsp;&nbsp;&nbsp; then run ```python train.py```
 </br>
-![SS from tensorboard while training tom](https://github.com/levindabhi/SieveNet/images/train_tom.png)
+![SS from tensorboard while training tom](https://github.com/levindabhi/SieveNet/blob/master/images/train_tom.png)
 
 
 # Testing on dataset #
@@ -38,10 +38,10 @@ For testing, in `config.py` set ```self.datamode='test'```
 </br>
 Here is testing result. For Coarse-to-Fine Warping module,
 </br>
-![SS from tensorboard while testing gmm](https://github.com/levindabhi/SieveNet/images/test_gmm.jpg)
+![SS from tensorboard while testing gmm](https://github.com/levindabhi/SieveNet/blob/master/images/test_gmm.jpg)
 </br>For Segmentation Assisted Texture Translation module, 
 </br>
-![SS from tensorboard while testing gmm](https://github.com/levindabhi/SieveNet/images/test_tom.png)
+![SS from tensorboard while testing gmm](https://github.com/levindabhi/SieveNet/blob/master/images/test_tom.png)
 
 # Testing on custom image #
 1. Please download checkpoint of all three modules from [google drive](www.google.com) and put them in `checkpoints` folder.
