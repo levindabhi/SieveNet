@@ -46,7 +46,7 @@ Here is testing result. For Coarse-to-Fine Warping module,
 # Testing on custom image #
 Please download checkpoint of all three modules from [google drive](www.google.com) and put them in `checkpoints` folder.
 </br>
-Please download caffe-model from [here](http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel) and put the model in `pose` folder. </r>
+Please download caffe-model from [here](http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel) and put the model in `pose` folder. </br>
 Generate human parsing from [this](https://github.com/PeikeLi/Self-Correction-Human-Parsing) repo. Select `LIP` dataset while generating human parsing.</br>
 Set input-image's, cloth-image's, and output of human parsing image's path in config file.</br>
 Then run ```python inference.py```
