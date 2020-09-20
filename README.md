@@ -7,7 +7,7 @@ Dataset download instructions and link of dataset can be found from official rep
 Put dataset in `data` folder
 
 # Usage #
-Clone the repo and install requirements through ```requirement.txt``` 
+Clone the repo and install requirements through ```pip install -r requirements.txt``` 
 
 # Traning #
 #### Coarse-to-Fine Warping module ####
