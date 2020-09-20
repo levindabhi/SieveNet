@@ -31,7 +31,7 @@ Clone the repo and install requirements through ```pip install -r requirements.t
 
 
 # Testing on dataset #
-Please download checkpoint of all three modules from [google drive](www.google.com) and put them in `checkpoints` folder
+Please download checkpoint of all three modules from [google drive](https://drive.google.com/drive/folders/17aPw4vzY4v0Rzayrp71ygzdo6zlqzmjM?usp=sharing) and put them in `checkpoints` folder
 </br>
 For testing, in `config.py` set ```self.datamode='test'```
 </br> For Testing of Coarse-to-Fine Warping module, Conditional Segmentation Mask generation module, and Segmentation Assisted Texture Translation module set ```self.stage='GMM'```, ```self.stage='SEG'```, and ```self.stage='TOM'``` respectively.
@@ -44,7 +44,7 @@ Here is testing result. For Coarse-to-Fine Warping module,
 ![SS from tensorboard while testing gmm](https://github.com/levindabhi/SieveNet/blob/master/images/test_tom.png)
 
 # Testing on custom image #
-1. Please download checkpoint of all three modules from [google drive](www.google.com) and put them in `checkpoints` folder.
+1. Please download checkpoint of all three modules from [google drive](https://drive.google.com/drive/folders/17aPw4vzY4v0Rzayrp71ygzdo6zlqzmjM?usp=sharing) and put them in `checkpoints` folder.
 2. Please download caffe-model from [here](http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel) and put the model in `pose` folder. </br>
 3. Generate human parsing from [Self-Correction-Human-Parsing](https://github.com/PeikeLi/Self-Correction-Human-Parsing) repo. Select `LIP` dataset while generating human parsing.</br>
 4. Set input-image's, cloth-image's, and output of human parsing image's path in config file.</br>
