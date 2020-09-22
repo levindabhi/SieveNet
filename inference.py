@@ -34,12 +34,15 @@ def generate_data(opt, im_path, cloth_path, pose_path, segm_path):
                 transforms.Normalize((0.5,), (0.5,))])
 
     c = Image.open(cloth_path)
+	c = c.resize((opt.fine_width, opt.fine_height))
     c = transform(c)
 
     im = Image.open(osp.join(im_path))
+	im = im.resize((opt.fine_width, opt.fine_height))
     im = transform(im)
 
     im_parse = Image.open(segm_path)
+	im_parse = im_parse.resize((opt.fine_width, opt.fine_height))
     parse_array = np.array(im_parse)
 
     parse_shape = (parse_array > 0).astype(np.float32)
