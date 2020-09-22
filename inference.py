@@ -34,6 +34,7 @@ def generate_data(opt, im_path, cloth_path, pose_path, segm_path):
                 transforms.Normalize((0.5,), (0.5,))])
 
     c = Image.open(cloth_path)
+	#resizing into size of model's input
 	c = c.resize((opt.fine_width, opt.fine_height))
     c = transform(c)
 
