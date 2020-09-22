@@ -1,4 +1,8 @@
 # SieveNet #
+
+![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 This is the unofficial implementation of 'SieveNet: A Unified Framework for Robust Image-Based Virtual Try-On' </br>
 Paper can be found from [here](https://arxiv.org/pdf/2001.06265.pdf)
 
@@ -46,7 +50,7 @@ Here is testing result. For Coarse-to-Fine Warping module,
 # Testing on custom image #
 1. Please download checkpoint of all three modules from [google drive](https://drive.google.com/drive/folders/17aPw4vzY4v0Rzayrp71ygzdo6zlqzmjM?usp=sharing) and put them in `checkpoints` folder.
 2. Please download caffe-model from [here](http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/coco/pose_iter_440000.caffemodel) and put the model in `pose` folder. </br>
-3. Generate human parsing from [Self-Correction-Human-Parsing](https://github.com/PeikeLi/Self-Correction-Human-Parsing) repo. Select `LIP` dataset while generating human parsing.</br>
+3. Generate human parsing from [Self-Correction-Human-Parsing](https://github.com/PeikeLi/Self-Correction-Human-Parsing) repo or from this [colab demo](https://colab.research.google.com/drive/1JOwOPaChoc9GzyBi5FUEYTSaP2qxJl10?usp=sharing). </br> Select `LIP` dataset while generating human parsing.</br>
 4. Set input-image's, cloth-image's, and output of human parsing image's path in config file.</br>
 5. Then run ```python inference.py```
 Output will be saved in `outputs` folder.
