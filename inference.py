@@ -35,15 +35,15 @@ def generate_data(opt, im_path, cloth_path, pose_path, segm_path):
 
     c = Image.open(cloth_path)
 	#resizing into size of model's input
-	c = c.resize((opt.fine_width, opt.fine_height))
+    c = c.resize((opt.fine_width, opt.fine_height))
     c = transform(c)
 
     im = Image.open(osp.join(im_path))
-	im = im.resize((opt.fine_width, opt.fine_height))
+    im = im.resize((opt.fine_width, opt.fine_height))
     im = transform(im)
 
     im_parse = Image.open(segm_path)
-	im_parse = im_parse.resize((opt.fine_width, opt.fine_height))
+    im_parse = im_parse.resize((opt.fine_width, opt.fine_height))
     parse_array = np.array(im_parse)
 
     parse_shape = (parse_array > 0).astype(np.float32)
