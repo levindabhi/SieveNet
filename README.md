@@ -55,6 +55,12 @@ Here is testing result. For Coarse-to-Fine Warping module,
 5. Then run ```python inference.py```
 Output will be saved in `outputs` folder.
 
+## Update: Inference using colab
+Please find inference code of Sievenet in 2nd part of this notebook
+
+[colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
+[![Open In Colab][colab-badge]](https://colab.research.google.com/github/levindabhi/ACGPN/blob/master/ACGPN_and_SieveNet.ipynb)
+
 # Acknowledgements #
 Some modules of this implementation is based on this [repo](https://github.com/sergeywong/cp-vton)</br>
 For generating pose keypoints, I have used [learnopencv](https://github.com/spmallick/learnopencv/tree/master/OpenPose-Multi-Person) implementation of OpenPose
